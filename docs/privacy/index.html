@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="RemoMost is an iOS remote access app using RDP, developed by Galin Genchev. This policy explains how data is handled when you use the app.">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>RemoMost Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; --bg: #f5f7fb; --text: #172132;
+  --muted: #53627a; --accent: #075eaa; --line: #d4ddea; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 1.0625rem/1.7 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.page { max-width: 52rem; margin: auto; padding: 2rem 1.4rem 4rem; }
+header { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.brand { font-size: 1.25rem; font-weight: 700; letter-spacing: -.025em; }
+nav { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+nav a { font-size: 1rem; text-underline-offset: .25em; }
+nav a[aria-current] { font-weight: 700; color: var(--text); }
+main { padding-top: 1.75rem; }
+h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.18; letter-spacing: -.035em;
+  margin: 0 0 1rem; overflow-wrap: anywhere; }
+h2 { font-size: 1.3rem; line-height: 1.35; margin: 2rem 0 .8rem; }
+p { margin: .75rem 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.meta, footer { color: var(--muted); }
+.meta { font-size: 1rem; }
+footer { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: .5rem;
+  font-size: 1rem; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e1520; --text: #eef3fa; --muted: #b0bfd3; --accent: #83bfff; --line: #35445a; }
+}
+@media print { :root { --bg: white; --text: black; --muted: #333; }
+  nav { display: none; } .page { max-width: none; padding: 0; } }
+</style>
+</head>
+<body>
+<div class="page">
+<header><div class="brand">RemoMost</div><nav aria-label="RemoMost"><a href="../index.html">Support</a><a href="./index.html" aria-current="page">Privacy</a></nav><nav aria-label="Language"><a href="./bg/index.html" lang="bg" hreflang="bg">Български</a><a href="./index.html" lang="en" hreflang="en" aria-current="page">English</a><a href="./de/index.html" lang="de" hreflang="de">Deutsch</a><a href="./es/index.html" lang="es" hreflang="es">Español</a><a href="./fr/index.html" lang="fr" hreflang="fr">Français</a><a href="./it/index.html" lang="it" hreflang="it">Italiano</a><a href="./ru/index.html" lang="ru" hreflang="ru">Русский</a><a href="./pt-BR/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></nav></header>
+<main>
+<h1>RemoMost Privacy Policy</h1>
+<p class="meta">Last updated: <time datetime="2026-11-22">2026-11-22</time></p>
+<p>RemoMost is an iOS remote access app using RDP, developed by Galin Genchev. This policy explains how data is handled when you use the app.</p>
+<section aria-labelledby="overview"><h2 id="overview">No tracking or registration</h2>
+<p>RemoMost does not require a RemoMost account and includes no advertising, analytics or tracking SDKs. The developer does not receive your saved connections, passwords, remote screen contents or clipboard contents and does not sell this data.</p></section><section aria-labelledby="connections"><h2 id="connections">Connecting to a remote computer</h2>
+<p>The app connects directly to the server address you choose. Login details are sent to that server for authentication. Screen contents, keyboard and pointer commands, clipboard text and audio are exchanged according to the features you use. Traffic is not routed through a developer-operated server.</p>
+<p>The owner or administrator of the remote computer may keep their own access logs. Data processing on that computer is under their control.</p></section><section aria-labelledby="storage"><h2 id="storage">Data stored on your device</h2>
+<p>Connection names, addresses, ports, usernames, domains, trusted certificate fingerprints and preferences are stored locally in the app. A password is saved only when you enable remembering it and is protected using iOS Keychain for this device. Active-session data and passwords may be held temporarily in memory to operate the sessions.</p>
+<p>RemoMost has no automatic cloud synchronization service of its own. iOS may include preferences and other app data in system backups according to your settings. Saved Keychain passwords are bound to the device and do not migrate to another device through a standard backup.</p></section><section aria-labelledby="clipboard-audio"><h2 id="clipboard-audio">Clipboard and audio</h2>
+<p>Access to the phone clipboard and writing text to it occur through the copy and paste actions you choose. Text from the remote clipboard may be processed temporarily in session memory; RemoMost does not save it to a file. Text pasted into Windows may remain in its clipboard after disconnection.</p>
+<p>When audio is enabled, the app plays sound from the session currently being shown. RemoMost does not record this audio or use the phone microphone.</p></section><section aria-labelledby="thumbnails"><h2 id="thumbnails">Remote screen thumbnails</h2>
+<p>If you enable remembering a thumbnail, the app stores a reduced image of the last received screen locally. It may contain information visible on the computer. The file uses iOS data protection and is excluded from system backups. It is removed when you disable the option and save the connection, or delete the connection.</p></section><section aria-labelledby="backups"><h2 id="backups">Archives and permissions</h2>
+<p>When you explicitly create an archive, connections are encrypted using AES-256-GCM and the password you provide. Saved passwords are included only if you select this and verify your identity through iOS. RemoMost receives the authentication result, not Face ID data, and does not save the archive password.</p>
+<p>You choose the file destination using Files: on the device, in iCloud Drive or with another provider. Exported copies are managed by you and the selected provider and are not deleted when you remove a connection or the app. Local network access is used to connect to computers you select.</p></section><section aria-labelledby="control"><h2 id="control">Retention and deletion</h2>
+<p>Local connections and preferences remain until you change or delete them. Deleting a connection in RemoMost removes its profile, saved password and thumbnail. Keychain entries may survive uninstalling an app: delete connections inside RemoMost before uninstalling if you also want to remove their saved passwords.</p>
+<p>Use the relevant storage provider or remote computer to delete exported archives or data remaining there. Apple may process system diagnostics according to your settings and its privacy policy; RemoMost includes no analytics or crash-reporting service of its own.</p></section><section aria-labelledby="contact-changes"><h2 id="contact-changes">Contact and policy changes</h2>
+<p>If you email the contact below, your email address and message are processed to answer your enquiry and retained for as long as necessary for that purpose and applicable legal obligations. You can request access, correction or deletion of data you supplied for support. The developer cannot access data held only on your device or remote computer.</p>
+<p>This policy will be updated if data handling changes. The last updated date appears at the beginning. For privacy questions, use the contact below.</p></section>
+<section aria-labelledby="contact"><h2 id="contact">Contact</h2>
+<p>Galin Genchev<br><a href="mailto:galin.genchev@icloud.com">galin.genchev@icloud.com</a></p></section>
+</main>
+<footer><h2>About this website</h2>
+<p>This public copy is prepared for GitHub Pages. GitHub may log visitors’ IP addresses for security purposes under its privacy statement. The offline policy in RemoMost can be read without connecting to this website.</p>
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>
+</footer>
+</div>
+</body>
+</html>

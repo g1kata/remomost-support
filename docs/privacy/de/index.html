@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="RemoMost ist eine von Galin Genchev entwickelte iOS-App für den Fernzugriff über RDP. Diese Erklärung beschreibt, wie Daten bei der Nutzung der App verarbeitet werden.">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Datenschutzerklärung für RemoMost</title>
+<style>
+:root { color-scheme: light dark; --bg: #f5f7fb; --text: #172132;
+  --muted: #53627a; --accent: #075eaa; --line: #d4ddea; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 1.0625rem/1.7 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.page { max-width: 52rem; margin: auto; padding: 2rem 1.4rem 4rem; }
+header { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.brand { font-size: 1.25rem; font-weight: 700; letter-spacing: -.025em; }
+nav { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+nav a { font-size: 1rem; text-underline-offset: .25em; }
+nav a[aria-current] { font-weight: 700; color: var(--text); }
+main { padding-top: 1.75rem; }
+h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.18; letter-spacing: -.035em;
+  margin: 0 0 1rem; overflow-wrap: anywhere; }
+h2 { font-size: 1.3rem; line-height: 1.35; margin: 2rem 0 .8rem; }
+p { margin: .75rem 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.meta, footer { color: var(--muted); }
+.meta { font-size: 1rem; }
+footer { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: .5rem;
+  font-size: 1rem; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e1520; --text: #eef3fa; --muted: #b0bfd3; --accent: #83bfff; --line: #35445a; }
+}
+@media print { :root { --bg: white; --text: black; --muted: #333; }
+  nav { display: none; } .page { max-width: none; padding: 0; } }
+</style>
+</head>
+<body>
+<div class="page">
+<header><div class="brand">RemoMost</div><nav aria-label="RemoMost"><a href="../../index.html">Support</a><a href="./index.html" aria-current="page">Datenschutz</a></nav><nav aria-label="Sprache"><a href="../bg/index.html" lang="bg" hreflang="bg">Български</a><a href="../index.html" lang="en" hreflang="en">English</a><a href="../de/index.html" lang="de" hreflang="de" aria-current="page">Deutsch</a><a href="../es/index.html" lang="es" hreflang="es">Español</a><a href="../fr/index.html" lang="fr" hreflang="fr">Français</a><a href="../it/index.html" lang="it" hreflang="it">Italiano</a><a href="../ru/index.html" lang="ru" hreflang="ru">Русский</a><a href="../pt-BR/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></nav></header>
+<main>
+<h1>Datenschutzerklärung für RemoMost</h1>
+<p class="meta">Zuletzt aktualisiert: <time datetime="2026-11-22">2026-11-22</time></p>
+<p>RemoMost ist eine von Galin Genchev entwickelte iOS-App für den Fernzugriff über RDP. Diese Erklärung beschreibt, wie Daten bei der Nutzung der App verarbeitet werden.</p>
+<section aria-labelledby="overview"><h2 id="overview">Kein Tracking und keine Registrierung</h2>
+<p>RemoMost benötigt kein eigenes Benutzerkonto und enthält keine Werbung sowie keine Analyse- oder Tracking-SDKs. Der Entwickler erhält weder Ihre gespeicherten Verbindungen und Passwörter noch Inhalte des entfernten Bildschirms oder der Zwischenablage und verkauft diese Daten nicht.</p></section><section aria-labelledby="connections"><h2 id="connections">Verbindung mit einem entfernten Computer</h2>
+<p>Die App verbindet sich direkt mit der von Ihnen gewählten Serveradresse. Zugangsdaten werden zur Authentifizierung an diesen Server gesendet. Bildschirminhalte, Tastatur- und Mausbefehle, Zwischenablagetext und Audio werden entsprechend den verwendeten Funktionen übertragen. Der Datenverkehr läuft nicht über einen Server des Entwicklers.</p>
+<p>Der Eigentümer oder Administrator des entfernten Computers kann eigene Zugriffsprotokolle führen. Die Datenverarbeitung auf diesem Computer unterliegt seiner Kontrolle.</p></section><section aria-labelledby="storage"><h2 id="storage">Auf Ihrem Gerät gespeicherte Daten</h2>
+<p>Verbindungsnamen, Adressen, Ports, Benutzernamen, Domänen, vertrauenswürdige Zertifikatsfingerabdrücke und Einstellungen werden lokal in der App gespeichert. Ein Passwort wird nur gespeichert, wenn Sie dies aktivieren, und durch die iOS-Schlüsselbundfunktion für dieses Gerät geschützt. Daten aktiver Sitzungen und Passwörter können für den Betrieb der Sitzungen vorübergehend im Arbeitsspeicher verbleiben.</p>
+<p>RemoMost hat keinen eigenen Dienst zur automatischen Cloud-Synchronisierung. iOS kann je nach Ihren Einstellungen App-Einstellungen und andere App-Daten in Systemsicherungen aufnehmen. Gespeicherte Schlüsselbundpasswörter sind an das Gerät gebunden und werden durch eine normale Sicherung nicht auf ein anderes Gerät übertragen.</p></section><section aria-labelledby="clipboard-audio"><h2 id="clipboard-audio">Zwischenablage und Audio</h2>
+<p>Der Zugriff auf die Zwischenablage des Telefons und das Schreiben von Text erfolgen über die von Ihnen gewählten Kopier- und Einfügeaktionen. Text aus der entfernten Zwischenablage kann vorübergehend im Sitzungsspeicher verarbeitet werden; RemoMost speichert ihn nicht in einer Datei. In Windows eingefügter Text kann nach dem Trennen in dessen Zwischenablage verbleiben.</p>
+<p>Bei aktiviertem Audio gibt die App den Ton der angezeigten Sitzung wieder. RemoMost zeichnet dieses Audio nicht auf und verwendet das Mikrofon des Telefons nicht.</p></section><section aria-labelledby="thumbnails"><h2 id="thumbnails">Vorschaubilder des entfernten Bildschirms</h2>
+<p>Wenn Sie das Speichern eines Vorschaubilds aktivieren, speichert die App lokal ein verkleinertes Bild des zuletzt empfangenen Bildschirms. Es kann auf dem Computer sichtbare Informationen enthalten. Die Datei nutzt den iOS-Datenschutz und ist von Systemsicherungen ausgeschlossen. Sie wird entfernt, wenn Sie die Option deaktivieren und die Verbindung speichern oder die Verbindung löschen.</p></section><section aria-labelledby="backups"><h2 id="backups">Archive und Berechtigungen</h2>
+<p>Wenn Sie ausdrücklich ein Archiv erstellen, werden die Verbindungen mit AES-256-GCM und Ihrem gewählten Passwort verschlüsselt. Gespeicherte Passwörter werden nur einbezogen, wenn Sie dies auswählen und Ihre Identität über iOS bestätigen. RemoMost erhält das Authentifizierungsergebnis, keine Face-ID-Daten, und speichert das Archivpasswort nicht.</p>
+<p>Über die Dateien-App wählen Sie den Speicherort: auf dem Gerät, in iCloud Drive oder bei einem anderen Anbieter. Exportierte Kopien werden von Ihnen und dem gewählten Anbieter verwaltet und beim Löschen einer Verbindung oder der App nicht gelöscht. Der Zugriff auf das lokale Netzwerk dient der Verbindung zu den von Ihnen ausgewählten Computern.</p></section><section aria-labelledby="control"><h2 id="control">Aufbewahrung und Löschung</h2>
+<p>Lokale Verbindungen und Einstellungen bleiben erhalten, bis Sie sie ändern oder löschen. Das Löschen einer Verbindung in RemoMost entfernt ihren Eintrag, das gespeicherte Passwort und das Vorschaubild. Schlüsselbundeinträge können eine Deinstallation überstehen: Löschen Sie Verbindungen vor der Deinstallation in RemoMost, wenn auch die gespeicherten Passwörter entfernt werden sollen.</p>
+<p>Löschen Sie exportierte Archive oder auf dem entfernten Computer verbliebene Daten beim jeweiligen Speicheranbieter oder auf diesem Computer. Apple kann Systemdiagnosen gemäß Ihren Einstellungen und seiner Datenschutzerklärung verarbeiten; RemoMost enthält keinen eigenen Analyse- oder Absturzberichtsdienst.</p></section><section aria-labelledby="contact-changes"><h2 id="contact-changes">Kontakt und Änderungen</h2>
+<p>Wenn Sie an die unten angegebene Adresse schreiben, werden Ihre E-Mail-Adresse und Ihre Nachricht zur Beantwortung verarbeitet und so lange aufbewahrt, wie es hierfür und aufgrund anwendbarer gesetzlicher Pflichten notwendig ist. Sie können Auskunft, Berichtigung oder Löschung der für den Support bereitgestellten Daten verlangen. Der Entwickler hat keinen Zugriff auf Daten, die ausschließlich auf Ihrem Gerät oder entfernten Computer gespeichert sind.</p>
+<p>Diese Erklärung wird aktualisiert, wenn sich die Datenverarbeitung ändert. Das Datum der letzten Aktualisierung steht am Anfang. Bei Datenschutzfragen nutzen Sie den unten angegebenen Kontakt.</p></section>
+<section aria-labelledby="contact"><h2 id="contact">Kontakt</h2>
+<p>Galin Genchev<br><a href="mailto:galin.genchev@icloud.com">galin.genchev@icloud.com</a></p></section>
+</main>
+<footer><h2>Über diese Website</h2>
+<p>Diese öffentliche Fassung ist für GitHub Pages vorbereitet. GitHub kann die IP-Adressen von Besuchern zu Sicherheitszwecken gemäß seiner Datenschutzerklärung protokollieren. Die Offline-Erklärung in RemoMost kann ohne Verbindung zu dieser Website gelesen werden.</p>
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>
+</footer>
+</div>
+</body>
+</html>

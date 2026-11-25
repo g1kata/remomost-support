@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="RemoMost е iOS приложение за отдалечен достъп чрез RDP, разработено от Galin Genchev. Тази политика обяснява как се обработват данните при използване на приложението.">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Политика за поверителност на RemoMost</title>
+<style>
+:root { color-scheme: light dark; --bg: #f5f7fb; --text: #172132;
+  --muted: #53627a; --accent: #075eaa; --line: #d4ddea; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 1.0625rem/1.7 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.page { max-width: 52rem; margin: auto; padding: 2rem 1.4rem 4rem; }
+header { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.brand { font-size: 1.25rem; font-weight: 700; letter-spacing: -.025em; }
+nav { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+nav a { font-size: 1rem; text-underline-offset: .25em; }
+nav a[aria-current] { font-weight: 700; color: var(--text); }
+main { padding-top: 1.75rem; }
+h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.18; letter-spacing: -.035em;
+  margin: 0 0 1rem; overflow-wrap: anywhere; }
+h2 { font-size: 1.3rem; line-height: 1.35; margin: 2rem 0 .8rem; }
+p { margin: .75rem 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.meta, footer { color: var(--muted); }
+.meta { font-size: 1rem; }
+footer { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: .5rem;
+  font-size: 1rem; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e1520; --text: #eef3fa; --muted: #b0bfd3; --accent: #83bfff; --line: #35445a; }
+}
+@media print { :root { --bg: white; --text: black; --muted: #333; }
+  nav { display: none; } .page { max-width: none; padding: 0; } }
+</style>
+</head>
+<body>
+<div class="page">
+<header><div class="brand">RemoMost</div><nav aria-label="RemoMost"><a href="../../bg/index.html">Поддръжка</a><a href="./index.html" aria-current="page">Поверителност</a></nav><nav aria-label="Език"><a href="../bg/index.html" lang="bg" hreflang="bg" aria-current="page">Български</a><a href="../index.html" lang="en" hreflang="en">English</a><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a><a href="../es/index.html" lang="es" hreflang="es">Español</a><a href="../fr/index.html" lang="fr" hreflang="fr">Français</a><a href="../it/index.html" lang="it" hreflang="it">Italiano</a><a href="../ru/index.html" lang="ru" hreflang="ru">Русский</a><a href="../pt-BR/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></nav></header>
+<main>
+<h1>Политика за поверителност на RemoMost</h1>
+<p class="meta">Последна актуализация: <time datetime="2026-11-22">2026-11-22</time></p>
+<p>RemoMost е iOS приложение за отдалечен достъп чрез RDP, разработено от Galin Genchev. Тази политика обяснява как се обработват данните при използване на приложението.</p>
+<section aria-labelledby="overview"><h2 id="overview">Без проследяване и регистрация</h2>
+<p>RemoMost не изисква собствен потребителски акаунт и не включва реклами, аналитични или проследяващи SDK. Разработчикът не получава запазените ви връзки, пароли, съдържанието на отдалечения екран или клипборда и не продава тези данни.</p></section><section aria-labelledby="connections"><h2 id="connections">Връзка с отдалечения компютър</h2>
+<p>Приложението се свързва директно с адреса на сървъра, който посочите. Данните за вход се изпращат към този сървър за удостоверяване. Екранът, командите от клавиатурата и мишката, клипбордът и звукът се обменят според използваните функции. Трафикът не преминава през сървър на разработчика.</p>
+<p>Собственикът или администраторът на отдалечения компютър може да поддържа собствени журнали за достъп. Обработката на данните на този компютър е под негов контрол.</p></section><section aria-labelledby="storage"><h2 id="storage">Какво се пази на устройството</h2>
+<p>Имената на връзките, адресите, портовете, потребителските имена, домейните, доверените отпечатъци на сертификати и настройките се пазят в локалното хранилище на приложението. Парола се записва само при включено запомняне и се защитава чрез iOS Keychain за това устройство. Данни за активните сесии и пароли може да се пазят временно в паметта за работата на сесиите.</p>
+<p>RemoMost няма собствено автоматично облачно синхронизиране. iOS може да включва настройки и други данни на приложението в системните резервни копия според вашите настройки. Запазените Keychain пароли са обвързани с устройството и не се прехвърлят към друго устройство чрез стандартно резервно копие.</p></section><section aria-labelledby="clipboard-audio"><h2 id="clipboard-audio">Клипборд и звук</h2>
+<p>Достъпът до клипборда на телефона и поставянето на текст в него се извършват чрез избраните от вас действия за копиране и поставяне. Текстът от клипборда на отдалечения компютър може да се обработва временно в паметта на сесията; RemoMost не го записва във файл. Текст, поставен в Windows, може да остане в неговия клипборд след прекъсване.</p>
+<p>При включен звук приложението възпроизвежда аудио от показваната сесия. RemoMost не записва аудиото и не използва микрофона на телефона.</p></section><section aria-labelledby="thumbnails"><h2 id="thumbnails">Миниатюри на отдалечения екран</h2>
+<p>Ако включите „Запомняй миниатюра“, приложението пази локално умалено изображение на последния получен екран. То може да съдържа видимата на компютъра информация. Файлът е със защита на данните на iOS и е изключен от системните резервни копия. Миниатюрата се премахва при изключване на опцията със запазване на връзката или при изтриване на връзката.</p></section><section aria-labelledby="backups"><h2 id="backups">Архиви и разрешения</h2>
+<p>При изрично създаване на архив връзките се криптират с AES-256-GCM и зададената от вас парола. Запазените пароли се включват само ако изберете това и потвърдите самоличността си чрез iOS. RemoMost получава резултата от потвърждението, без данни от Face ID, и не съхранява паролата на архива.</p>
+<p>Избирате къде да запазите файла чрез приложението „Файлове“: на устройството, в iCloud Drive или при друг доставчик. Изнесените копия се управляват от вас и съответния доставчик и не се изтриват при премахване на връзката или приложението. Достъпът до локалната мрежа служи за свързване с избраните от вас компютри.</p></section><section aria-labelledby="control"><h2 id="control">Съхранение и изтриване на данните</h2>
+<p>Локалните връзки и настройки се пазят, докато ги промените или изтриете. Изтриването на връзка от RemoMost премахва нейния запис, запазената парола и миниатюрата. Keychain записи може да останат след деинсталиране на приложение: изтрийте връзките от RemoMost преди деинсталиране, ако искате да премахнете и запазените пароли.</p>
+<p>За изтриване на изнесени архиви или съдържание, останало на отдалечения компютър, използвайте съответното хранилище или компютър. Apple може да обработва системна диагностика според настройките ви и своята политика за поверителност; RemoMost не включва собствена услуга за аналитика или изпращане на отчети за сривове.</p></section><section aria-labelledby="contact-changes"><h2 id="contact-changes">Контакт и промени в политиката</h2>
+<p>Ако пишете на посочения имейл, адресът ви и съдържанието на съобщението се обработват за отговор на запитването и се пазят за необходимото за това време и приложимите законови задължения. Можете да поискате достъп, корекция или изтриване на данни, които сте предоставили за поддръжка. Разработчикът няма достъп до данните, пазени само на вашето устройство или отдалечен компютър.</p>
+<p>При промени в обработката на данните политиката ще бъде актуализирана. Датата на последната актуализация е посочена в началото. За въпроси относно поверителността използвайте контакта по-долу.</p></section>
+<section aria-labelledby="contact"><h2 id="contact">Контакт</h2>
+<p>Galin Genchev<br><a href="mailto:galin.genchev@icloud.com">galin.genchev@icloud.com</a></p></section>
+</main>
+<footer><h2>За тази уеб страница</h2>
+<p>Публичното копие е подготвено за GitHub Pages. При посещение GitHub може да записва IP адреса за целите на сигурността съгласно своята политика за поверителност. Офлайн текстът в RemoMost се чете без връзка с тази страница.</p>
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Политика за поверителност на GitHub</a>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Help with connections, controls and saved computers in RemoMost for iPhone and iPad.">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>RemoMost Support</title>
+<link rel="icon" type="image/png" href="./assets/icon.png">
+<style>
+:root { color-scheme: light dark; --bg: #f5f7fb; --text: #172132;
+  --muted: #53627a; --accent: #075eaa; --line: #d4ddea; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 1.0625rem/1.7 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.page { max-width: 52rem; margin: auto; padding: 2rem 1.4rem 4rem; }
+header { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.brand { font-size: 1.25rem; font-weight: 700; letter-spacing: -.025em; }
+nav { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+nav a { font-size: 1rem; text-underline-offset: .25em; }
+nav a[aria-current] { font-weight: 700; color: var(--text); }
+main { padding-top: 1.75rem; }
+h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.18; letter-spacing: -.035em;
+  margin: 0 0 1rem; overflow-wrap: anywhere; }
+h2 { font-size: 1.3rem; line-height: 1.35; margin: 2rem 0 .8rem; }
+p { margin: .75rem 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.meta, footer { color: var(--muted); }
+.meta { font-size: 1rem; }
+footer { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: .5rem;
+  font-size: 1rem; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e1520; --text: #eef3fa; --muted: #b0bfd3; --accent: #83bfff; --line: #35445a; }
+}
+@media print { :root { --bg: white; --text: black; --muted: #333; }
+  nav { display: none; } .page { max-width: none; padding: 0; } }
+
+.site-brand { display: flex; align-items: center; gap: .8rem; color: var(--text); text-decoration: none; }
+.site-brand img { display: block; width: 3rem; height: 3rem; border-radius: .75rem; }
+.site-navigation { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.2rem; }
+.languages { margin-inline-start: auto; display: flex; gap: .8rem; }
+.intro { color: var(--muted); max-width: 42rem; }
+.contact-card { margin: 1.7rem 0 2rem; padding: 1.35rem; border: 1px solid var(--line); border-radius: 1.1rem; }
+.contact-card h2 { margin-top: 0; }
+.contact-card .developer { margin-bottom: 0; font-weight: 600; }
+.email { display: inline-block; font-weight: 600; }
+.email-button { display: inline-flex; align-items: center; min-height: 2.8rem; margin-top: 1rem; padding: .45rem 1rem; border: 1px solid var(--accent); border-radius: .7rem; font-weight: 600; text-decoration: none; }
+.helpful { color: var(--muted); font-size: 1rem; }
+details { padding: .95rem 0; border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; font-weight: 600; padding: .25rem 0; }
+summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+details p { margin: .65rem 0 .2rem; }
+.privacy-note { margin-top: 2.5rem; }
+@media (max-width: 32rem) { .languages { margin-inline-start: 0; } .page { padding-inline: 1rem; } }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<a class="site-brand brand" href="./index.html"><img src="./assets/icon.png" alt="">RemoMost</a>
+<nav class="site-navigation" aria-label="RemoMost">
+<a href="./index.html" aria-current="page">Support</a>
+<a href="./privacy/index.html">Privacy policy</a>
+<span class="languages" aria-label="Language"><a href="./index.html" lang="en" hreflang="en" aria-current="page">English</a><a href="./bg/index.html" lang="bg" hreflang="bg">Български</a></span>
+</nav>
+</header>
+<main>
+<h1>How can we help?</h1>
+<p class="intro">Help with connections, controls and saved computers in RemoMost for iPhone and iPad.</p>
+<section class="contact-card" aria-labelledby="contact">
+<h2 id="contact">Contact support</h2>
+<p>For questions, connection issues or feedback, email the developer.</p>
+<p class="developer">Galin Genchev</p>
+<a class="email" href="mailto:galin.genchev@icloud.com">galin.genchev@icloud.com</a><br>
+<a class="email-button" href="mailto:galin.genchev@icloud.com?subject=RemoMost%20support">Email support</a>
+<p class="helpful">Your device model, iOS version, RemoMost version, the error message and the steps you tried help us investigate. Please leave passwords out of support messages.</p>
+</section>
+<section aria-labelledby="questions"><h2 id="questions">Quick answers</h2><details><summary>What do I need to connect?</summary><p>A computer configured to accept RDP connections, its login credentials, and a network connection to it. For a computer on a private network, connect from the same network or through your own VPN.</p></details>
+<details><summary>Why won’t my computer connect?</summary><p>Check that the computer is awake, Remote Desktop is enabled, and the address, port and login details are correct. Your phone or tablet must be able to reach the computer. If you use a VPN, check that it is connected.</p></details>
+<details><summary>Why is there a certificate warning?</summary><p>The certificate could not be verified by the system. Check the computer and certificate fingerprint with its administrator before accepting or remembering it. An unexpected change to a previously trusted certificate needs to be checked.</p></details>
+<details><summary>How do I open the keyboard and special keys?</summary><p>Tap the floating button, then the keyboard button. F1 opens the special keys. Hold the keyboard button to choose the RemoMost keyboard. More gesture instructions are available in the app under Settings, then Help and controls.</p></details>
+<details><summary>How do I switch sessions or return to my computers?</summary><p>Open Active sessions using the overlapping rectangles, then tap a computer to return to it. The plus button returns to the computer gallery while keeping existing sessions open.</p></details>
+<details><summary>How do I back up my saved connections?</summary><p>In Settings, open Backup and restore. Export a password-protected archive and choose whether to include saved passwords. A new archive needs a password of at least 12 characters. Keep that password: RemoMost does not store it.</p></details></section>
+<section class="privacy-note" aria-labelledby="privacy"><h2 id="privacy">Your connections stay under your control</h2><p>RemoMost connects directly to the computer you choose. Sessions do not pass through a RemoMost relay server. The app has no ads, tracking or analytics, and saved passwords are protected by iOS Keychain.</p><p>Read the privacy policy for details about local storage, backups, clipboard, audio and support messages.</p><a href="./privacy/index.html">Privacy policy</a></section>
+</main>
+<footer><h2>About this website</h2><p>This support website is hosted on GitHub Pages. GitHub may log visitors’ IP addresses for security purposes under its privacy statement. The policy inside RemoMost can be read offline.</p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a></footer>
+</div>
+</body>
+</html>
